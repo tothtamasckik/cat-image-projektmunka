@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(32, 32, 97);
+}
+
+h1{
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+#imgDiv img{
+    border: 4px rgb(245, 131, 255) solid;
+    width: 20%;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+
+#btnContainer{
+    height: 200px;
+    position: relative;
+}
+
+#generateBtn{
+    border: rgb(245, 131, 255) solid 1px;
+
+}
+
+#generateBtn:hover{
+    transition: 0.5;
+    cursor: pointer;
+}
+
+#generateBtn:active{
+    background-color: rgb(120, 255, 161);
+}
+
+#btnVerticalContainer{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#generateBtn{
+    padding: 10px;
+    display: block;
+    margin: auto;
+}
+
+@media only screen and (max-width: 2000px) {
+    #generateBtn{
+        padding: 20px;
+    }
+}
