@@ -11,9 +11,10 @@ main{
     flex-direction: column;
 }
 
-#imgDiv img{
+#imgDiv img {
     border: 4px rgb(245, 131, 255) solid;
-    width: 20%;
+    width: 30rem;
+    height: 30rem;
     display: block;
     margin: auto;
     margin-bottom: 30px;

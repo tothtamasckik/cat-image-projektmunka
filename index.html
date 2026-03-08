@@ -10,10 +10,13 @@
     <h1>CAT IMAGE GENERATOR</h1>
     <main>
         <div id="imgDiv">
-            <img src="imgs/temp.jpg" alt="">
+            <picture>
+                <img src="imgs/temp.jpg" alt="" id="img" loading="lazy" >
+            </picture>
         </div>
-            <button id="generateBtn">Generate</button>
+            <button id="generateBtn" onclick="Random()">Generate</button>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
