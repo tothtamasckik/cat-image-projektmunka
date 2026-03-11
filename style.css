@@ -1,9 +1,14 @@
+*{
+    cursor: url("/cursor/kawaiicutepusheen/Pusheen\ Normal\ Select.ani")
+}
+
 body{
-    background-color: rgb(32, 32, 97);
+    background-color: rgb(164, 134, 197);
 }
 
 h1{
     text-align: center;
+    color: rgb(253, 225, 255);
 }
 
 main{
@@ -28,6 +33,10 @@ main{
 
 #generateBtn{
     border: rgb(245, 131, 255) solid 1px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgb(253, 225, 255);
 
 }
 
@@ -52,6 +61,28 @@ main{
     padding: 10px;
     display: block;
     margin: auto;
+}
+
+#cats{
+    width: 10%;
+    height: 2rem;
+}
+
+#img:hover{
+    cursor: grab;
+    -webkit-user-drag: none;
+    /* animation: pat 2s linear infinite ; */
+}
+
+#img:active{
+    animation: pat 2s linear infinite ;
+}
+
+
+@keyframes pat {
+    0% {height: 30rem;}
+    50% {height: 32rem;}
+    100%{height: 30rem;}
 }
 
 @media only screen and (max-width: 2000px) {
