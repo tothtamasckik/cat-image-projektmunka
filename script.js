@@ -1,7 +1,7 @@
 const generatebtn = document.getElementById("generateBtn");
 const catpic = document.getElementById("img");
 const tagSelect = document.getElementById('tagSelect');
-
+const textArea = document.getElementById("textArea")
 
 
 
@@ -9,12 +9,23 @@ const tagSelect = document.getElementById('tagSelect');
 
 
 function Random() {
-    
-    
-    
+    let r =  Math.floor(Math.random() * (100000 - 1 + 1) ) + 1;
     let timestamp = Date.now()
+    if (r == 1) {
+      catpic.src = "https://d.ibtimes.co.uk/en/full/1796610/benjamin-netanyahu.png"
+    }
+    else if (textArea.value != "") {
+      catpic.src = `https://cataas.com/cat/says/${textArea.value}?t=${timestamp}`;
+    }
+    else{
+      
     
-    catpic.src = `https://cataas.com/cat?t=${timestamp}`;
+      catpic.src = `https://cataas.com/cat?t=${timestamp}`;
+    }
+
+
+
+    
     
     
     
@@ -49,8 +60,9 @@ async function initializeTags() {
       const selectedTag = tagSelect.value;
       
       if (selectedTag) {
+        let timestamp = Date.now()
         
-        catpic.src = `https://cataas.com/cat/${selectedTag}`;
+        catpic.src = `https://cataas.com/cat/${selectedTag}?t=${timestamp}`;
       } 
       else {
         alert('Please select a tag first!');
