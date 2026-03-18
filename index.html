@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat image generator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>CAT IMAGE GENERATOR</h1>
@@ -14,14 +17,15 @@
                 <img src="imgs/temp.jpg" alt="" id="img" loading="lazy" >
             </picture>
         </div>
-            <button id="generateBtn" onclick="Random()">Generate</button>
-            <button onclick="loadCatWithTag()">Show Me the Cat!</button>
+            <button class="btn" onclick="Random()">Generate</button>
+            <button class="btn" onclick="loadCatWithTag()">Show Me the Cat!</button>
         </div>
         <div>
             <select id="tagSelect">
                 <option value="">Select a tag...</option>
             </select>
         </div>
+        <textarea name="" id="textArea"></textarea>
     </main>
     <!-- <a href="" id="download" target="_blank">ÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁ </a> -->
     <script src="script.js"></script>

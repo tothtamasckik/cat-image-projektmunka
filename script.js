@@ -51,8 +51,10 @@ async function initializeTags() {
       if (selectedTag) {
         
         catpic.src = `https://cataas.com/cat/${selectedTag}`;
-      } else {
+      } 
+      else {
         alert('Please select a tag first!');
+        // piros :)
       }
     }
 

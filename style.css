@@ -5,12 +5,18 @@
 
 body{
     background-color: rgb(164, 134, 197);
+    /* background-image: url("imgs/photo-1679651061374-303af962b1ea.avif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-; */
     
 }
 
 h1{
     text-align: center;
-    color: rgb(253, 225, 255);
+    /* font-family: 'Bitcount Grid Double Ink'; */
+    color: rgb(0, 0, 0);
+    font-weight: bold;
 }
 
 main{
@@ -28,46 +34,61 @@ main{
 }
 
 
-#btnContainer{
-    height: 200px;
-    position: relative;
-}
-
-#generateBtn{
+.btn{
     border: rgb(245, 131, 255) solid 1px;
     font-weight: bold;
     font-size: 20px;
     border-radius: 10px;
     background-color: rgb(253, 225, 255);
-
-}
-
-#generateBtn:hover{
-    transition: 0.5;
-    cursor: pointer;
-}
-
-#generateBtn:active{
-    background-color: rgb(120, 255, 161);
-}
-
-#btnVerticalContainer{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-#generateBtn{
     padding: 10px;
     display: block;
     margin: auto;
+    margin-top: 10px;
+    
+
+
 }
+
+.btn:hover, #tagSelect:hover{
+    transition: 0.5;
+    cursor: url("cursor/kawaiicutepusheen/cateatsfishtextselect-ezgif.com-ani-to-apng-converter.png"), pointer;
+}
+
+.btn:active{
+    background-color: rgb(120, 255, 161);
+}
+
 
 #cats{
     width: 10%;
     height: 2rem;
+}
+
+#tagSelect{
+    height: 2rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    font-size: 1.2rem;
+    background-color: rgb(253, 225, 255);
+    border: rgb(245, 131, 255) solid 1px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#textArea{
+    height: 2rem;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    background-color: rgb(253, 225, 255);
+    border: rgb(245, 131, 255) solid 1px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 50px;
 }
 
 #img:hover{
@@ -89,7 +110,7 @@ main{
 } */
 
 @media only screen and (max-width: 2000px) {
-    #generateBtn{
+    .btn{
         padding: 20px;
     }
 }
