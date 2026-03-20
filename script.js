@@ -2,7 +2,7 @@ const generatebtn = document.getElementById("generateBtn");
 const catpic = document.getElementById("img");
 const tagSelect = document.getElementById('tagSelect');
 const textArea = document.getElementById("textArea")
-
+const array = ["Black cat", "Beer", "British", "Box", "Christmas", "Halloween", "Kitten", "Orange", "Steve jobs", "baby", "low quality", "manspreading", "mexican", "nyancat-gif"]
 
 
 
@@ -43,11 +43,17 @@ async function initializeTags() {
         tags.sort();
         
         
+
+        
+
         tags.forEach(tag => {
-          const option = document.createElement('option');
-          option.value = tag;
-          option.textContent = tag;
-          tagSelect.appendChild(option);
+          if (array.includes(tag)) {
+            const option = document.createElement('option');
+            option.value = tag;
+            option.textContent = tag;
+            tagSelect.appendChild(option);
+          }
+          
         });
       } catch (error) {
         console.error('Error loading tags:', error);
