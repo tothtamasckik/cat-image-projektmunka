@@ -2,7 +2,10 @@ const generatebtn = document.getElementById("generateBtn");
 const catpic = document.getElementById("img");
 const tagSelect = document.getElementById('tagSelect');
 const textArea = document.getElementById("textArea")
-const array = ["Black cat", "Beer", "British", "Box", "Christmas", "Halloween", "Kitten", "Orange", "Steve jobs", "baby", "low quality", "manspreading", "mexican", "nyancat-gif"]
+const array = ["Black", "Beer", "British", "Box", "Christmas", 
+              "Halloween", "Kitten", "Orange", "Steve jobs", "baby", 
+              "low quality", "manspreading", "mexican", "nyancat-gif",
+              "dictator", "detective", "computer", "soda", "tortie", "tongue" ]
 
 
 
@@ -72,7 +75,7 @@ async function initializeTags() {
       } 
       else {
         alert('Please select a tag first!');
-        // piros :)
+        
       }
     }
 
