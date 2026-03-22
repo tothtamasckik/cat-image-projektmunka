@@ -1,39 +1,28 @@
 const generatebtn = document.getElementById("generateBtn");
 const catpic = document.getElementById("img");
 const tagSelect = document.getElementById('tagSelect');
-const textArea = document.getElementById("textArea")
+const textArea = document.getElementById("textArea");
 const array = ["Black", "Beer", "British", "Box", "Christmas", 
               "Halloween", "Kitten", "Orange", "Steve jobs", "baby", 
               "low quality", "manspreading", "mexican", "nyancat-gif",
-              "dictator", "detective", "computer", "soda", "tortie", "tongue" ]
+              "dictator", "detective", "computer", "soda", "tortie", "tongue" ];
 
 
 
 
 
 function Random() {
-    let r =  Math.floor(Math.random() * (100000 - 1 + 1) ) + 1;
-    let timestamp = Date.now()
+    let r =  Math.floor(Math.random() * (1000 - 1 + 1) ) + 1;
+    let timestamp = Date.now();
     if (r == 1) {
-      catpic.src = "https://d.ibtimes.co.uk/en/full/1796610/benjamin-netanyahu.png"
+      window.open("easter_egg_site/easter_egg.html", "_blank", "width=800,height=600");
     }
     else if (textArea.value != "") {
       catpic.src = `https://cataas.com/cat/says/${textArea.value}?t=${timestamp}`;
     }
     else{
-      
-    
       catpic.src = `https://cataas.com/cat?t=${timestamp}`;
     }
-
-
-
-    
-    
-    
-    
-    
-    
 }
 
 
@@ -42,12 +31,7 @@ async function initializeTags() {
         const response = await fetch('https://cataas.com/api/tags');
         const tags = await response.json();
         
-        
         tags.sort();
-        
-        
-
-        
 
         tags.forEach(tag => {
           if (array.includes(tag)) {
@@ -69,15 +53,13 @@ async function initializeTags() {
       const selectedTag = tagSelect.value;
       
       if (selectedTag) {
-        let timestamp = Date.now()
-        
+        let timestamp = Date.now();
         catpic.src = `https://cataas.com/cat/${selectedTag}?t=${timestamp}`;
       } 
       else {
         alert('Please select a tag first!');
-        
       }
-    }
+    };
 
 
-initializeTags()
+initializeTags();

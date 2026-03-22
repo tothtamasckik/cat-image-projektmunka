@@ -1,0 +1,11 @@
+* {
+    background-color: black;
+    color: wheat;
+    font-size: 1rem;
+}
+
+iframe{
+    pointer-events: none;
+    width: 100vw;
+    height: 50vw;
+}

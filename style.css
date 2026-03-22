@@ -1,19 +1,13 @@
 *{
        cursor: url("cursor/kawaiicutepusheen/PusheenLocationSelect-ezgif.com-ani-to-apng-converter.png"), auto;
-
 }
 
 body{
     background-color: rgb(164, 134, 197);
-    /* background-image: url("imgs/photo-1679651061374-303af962b1ea.avif");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-; */
 }
 
 h1{
     text-align: center;
-    /* font-family: 'Bitcount Grid Double Ink'; */
     color: rgb(0, 0, 0);
     font-weight: bold;
 }
@@ -21,17 +15,16 @@ h1{
 main{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 #imgDiv img {
     border: 4px rgb(245, 131, 255) solid;
-    /* width: 50rem; */
     height: 30rem; 
-    display: block;
-    margin: auto;
     margin-bottom: 30px;
 }
-
 
 .btn{
     border: rgb(245, 131, 255) solid 1px;
@@ -40,20 +33,19 @@ main{
     border-radius: 10px;
     background-color: rgb(253, 225, 255);
     padding: 20px;
-    display: block;
-    margin: auto;
     margin-top: 10px;
 }
 
 .btn:hover, #tagSelect:hover{
     transition: 0.5;
-    cursor: url("cursor/kawaiicutepusheen/cateatsfishtextselect-ezgif.com-ani-to-apng-converter.png"), pointer;
+    background-color: rgb(237, 178, 241);
+    border: rgb(103, 54, 107) solid 1px;
+    cursor: url("cursor/kawaiicutepusheen/select.gif"), pointer;
 }
 
 .btn:active{
-    background-color: rgb(120, 255, 161);
+    background-color: rgb(253, 225, 255);
 }
-
 
 #cats{
     width: 10%;
@@ -76,23 +68,59 @@ main{
 
 #textArea{
     height: 2rem;
-    margin: auto;
     margin-top: 30px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     background-color: rgb(253, 225, 255);
     border: rgb(245, 131, 255) solid 1px;
     font-weight: bold;
-    font-size: 20px;
     border-radius: 10px;
     padding: 50px;
+}
+
+#textarea:focus{
+    background-color: red;
 }
 
 #img:hover{
     -webkit-user-drag: none;
 }
 
-/* @media only screen and (max-width: 700px) {
-    body{
-        margin: auto;
+@media only screen and (max-width: 750px) {
+    #textArea{
+        font-size: 1rem;
+        padding: 40px;
     }
-} */
+    #imgDiv img{
+        height: 20rem;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    #textArea{
+        font-size: 0.8rem;
+        padding: 30px;
+    }
+    #imgDiv img{
+        height: 16rem;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    #textArea{
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+    #imgDiv img{
+        height: 14rem;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    #textArea{
+        font-size: 0.6rem;
+        padding: 6px;
+    }
+    #imgDiv img{
+        height: 10rem;
+    }
+}
